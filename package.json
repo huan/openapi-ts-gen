@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo test",
+    "lint": "npm run lint:es",
     "lint:es": "eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'"
   },
   "repository": {
