@@ -1,0 +1,47 @@
+{
+  "name": "openapi-ts-gen",
+  "version": "0.0.1",
+  "description": "OpenAPI 3.0 (f.k.a. Swagger) TypeScript Server Stub & Client Code Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test",
+    "lint:es": "eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huan/openapi-ts-gen.git"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "generator",
+    "typescript",
+    "server"
+  ],
+  "author": "Huan LI <zixia@zixia.net> (李卓桓)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/huan/openapi-ts-gen/issues"
+  },
+  "homepage": "https://github.com/huan/openapi-ts-gen#readme",
+  "dependencies": {
+    "brolog": "^1.8.3",
+    "openapi-codegen": "^2.0.3"
+  },
+  "devDependencies": {
+    "@chatie/eslint-config": "^0.8.1",
+    "@chatie/git-scripts": "^0.6.1",
+    "@chatie/semver": "^0.4.7",
+    "@chatie/tsconfig": "^0.8.0",
+    "pkg-jq": "^0.2.4",
+    "tstest": "^0.4.10"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  },
+  "publishConfig": {
+    "tag": "next"
+  }
+}
